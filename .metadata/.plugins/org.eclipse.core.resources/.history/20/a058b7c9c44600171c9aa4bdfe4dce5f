@@ -1,0 +1,68 @@
+package jas6;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+
+public class Password extends JFrame implements ActionListener{
+	JTextField t1;
+	JPasswordField p1;
+	JButton b1;
+	JLabel l1;
+	
+	Password(){
+		setSize(500, 500);
+		setLayout(null);
+		
+		l1 = new JLabel("Input user name and password");
+		l1.setBounds(200, 60, 200, 40);
+		this.add(l1);
+		
+		t1 = new JTextField("");
+		t1.setBounds(200, 110, 100, 40);
+		this.add(t1);
+		
+		p1 = new JPasswordField("");
+		p1.setBounds(200, 160, 100, 40);
+		this.add(p1);
+		
+		b1 = new JButton("ok");
+		b1.setBounds(200, 220, 50, 40);
+		b1.addActionListener(this);
+		this.add(b1);
+		
+		setVisible(true);
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if (e.getSource().equals(b1)){
+			if (e.getSource().equals(b1)){
+				if (t1.getText().equals("admin") && new String(p1.getPassword()).equals("admin")){
+					String text = ("Logged as " + t1.getText());
+					t1.setText("");
+					p1.setText("");
+					new Logged(text);
+				}
+				else{
+					l1.setText("Incorrect login or password");
+					t1.setText("");
+					p1.setText("");
+				}
+			}
+		}
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new Password();
+	}
+
+}

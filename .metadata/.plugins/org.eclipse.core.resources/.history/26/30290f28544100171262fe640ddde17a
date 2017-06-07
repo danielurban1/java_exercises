@@ -1,0 +1,28 @@
+package company;
+
+public class Company {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Employee worker1 = new Employee();
+		worker1.name = "John";
+		worker1.sureName = "Smith";
+		worker1.dateOfBirth = "11.11.1989";
+		worker1.workTime = 4;
+		
+		Employee worker2 = new Employee();
+		worker2.name = "Anna";
+		worker2.sureName = "Brown";
+		worker2.dateOfBirth = "11.11.1993";
+		worker2.workTime = 1;
+		
+		Employee worker3 = new Employee();
+		worker3.name = "John";
+		worker3.sureName = "Wayne";
+		worker2.dateOfBirth = "11.11.1982";
+		worker2.workTime = 15;
+		
+		System.out.println(worker1.name + " " + worker1.sureName + " " + worker1.dateOfBirth + " " + worker1.workTime);
+	}
+
+}

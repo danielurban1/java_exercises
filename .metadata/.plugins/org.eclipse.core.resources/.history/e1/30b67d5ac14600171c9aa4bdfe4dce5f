@@ -1,0 +1,40 @@
+package jas6;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+
+public class Password extends JFrame implements ActionListener{
+	JTextField t1;
+	JPasswordField p1;
+	JButton b1;
+	JLabel l1;
+	
+	Password(){
+		setSize(500, 500);
+		setLayout(null);
+		
+		t1 = new JTextField("");
+		t1.setBounds(200, 150, 100, 60);
+		
+		setVisible(true);
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,47 @@
+package jas9;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class DropDown extends JFrame implements ActionListener{
+	JComboBox c1;
+	JLabel l1;
+	
+	DropDown(){
+		setSize(500, 500);
+		setLayout(null);
+		String country[]={"1","2","3","4","5"};
+		
+		c1 = new JComboBox(country);
+		c1.setBounds(100, 100, 200, 50);
+		c1.addActionListener(this);
+		this.add(c1);
+		
+		l1 = new JLabel("");
+		l1.setBounds(100, 200, 200, 50);
+		this.add(l1);
+		
+		setVisible(true);
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if(e.getSource().equals(c1)){
+			l1.setText(Integer());
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new DropDown();
+	}
+
+
+
+}

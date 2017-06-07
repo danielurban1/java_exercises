@@ -1,0 +1,13 @@
+package j80;
+
+public class Exc2 extends Exception{
+
+    // Parameterless Constructor
+    public Exc2() {}
+
+    // Constructor that accepts a message
+    public  Exc2(String message)
+    {
+       super(message);
+    }
+}

@@ -1,0 +1,10 @@
+package j77;
+
+public class CompanyApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

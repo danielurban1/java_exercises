@@ -1,0 +1,12 @@
+package application.view;
+
+import javafx.animation.Animation;
+
+public class MainPane extends Animation{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

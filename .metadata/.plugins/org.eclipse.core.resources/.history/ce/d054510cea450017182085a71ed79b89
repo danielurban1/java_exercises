@@ -1,0 +1,19 @@
+package j79;
+
+import java.util.Scanner;
+
+public class NullException {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		String text = null;
+		try{
+			System.out.println(text.length());
+		}
+		catch (NullPointerException a){
+			System.out.println("Null exception");
+		}
+	}
+
+}

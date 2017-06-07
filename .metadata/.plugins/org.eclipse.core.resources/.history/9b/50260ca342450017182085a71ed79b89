@@ -1,0 +1,13 @@
+package j77;
+
+public class CompanyApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Company c = new Company();
+		while (c.getEmployeeList().size() < 3){
+			
+		}
+	}
+
+}

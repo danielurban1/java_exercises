@@ -1,0 +1,38 @@
+package jas3;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+
+public class Change extends JFrame implements ActionListener{
+	JButton  b1;
+	
+	Change(){
+		setSize(300, 200);
+		setLayout(null);
+		setVisible(true);
+		
+		JButton b1 = new JButton("OK");
+		b1.setBounds(110, 60, 60, 40);
+		b1.addActionListener(this);
+		this.add(b1);
+	}
+	public void actionPerformed(ActionEvent e){
+		if(b1.getText().equals("OK")){
+			b1.setText("b");
+		}
+		else{
+			b1.setText("OK");
+		}
+	}
+		
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new Change();
+	}
+}

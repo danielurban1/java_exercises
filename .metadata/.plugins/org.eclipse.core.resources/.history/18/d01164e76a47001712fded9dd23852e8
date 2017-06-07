@@ -1,0 +1,51 @@
+package jas12;
+
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+
+public class Table extends JFrame implements ActionListener{
+	String employee[][] = {{"12345", "Jan", "Kowalski", "4000"}, {"12345", "Anna", "Nowak", "4000"}, {"12345", "Jan", "Kowalski", "4000"}, {"12345", "Anna", "Nowak", "4000"}, {"12345", "Jan", "Kowalski", "4000"}, {"12345", "Anna", "Nowak", "4000"}};
+	String column[] = {"PESEL", "Name", "Surename", "Income"};
+	
+	JTable jt;
+	JScrollPane sp;
+	JFrame f;
+	JLabel l1;
+
+	
+	Table(){
+		f = new JFrame();
+		
+		f.setSize(500, 500);
+		f.setLayout(null);
+		
+		jt = new JTable(employee, column);
+		jt.setBounds(30, 40, 300, 300);
+		jt.addSe
+		
+		sp = new JScrollPane(jt);
+		f.add(sp);
+		f.add(jt);
+		
+		f.setVisible(true);
+	}
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new Table();
+	}
+
+
+}

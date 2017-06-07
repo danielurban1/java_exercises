@@ -1,0 +1,9 @@
+package j80;
+
+public class Exc2 extends Exception{
+
+    // Parameterless Constructor
+    public void sendMsq() {
+  	  System.out.println("Exception2");
+    }
+}

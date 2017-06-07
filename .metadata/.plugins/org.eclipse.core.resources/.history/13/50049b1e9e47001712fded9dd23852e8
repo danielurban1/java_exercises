@@ -1,0 +1,54 @@
+package jas19;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JSlider;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
+
+public class Slider extends JFrame implements ActionListener, ChangeListener{
+	JFrame f1;
+	JSlider s1;
+	JLabel l1;
+	
+	Slider(){
+		f1 = new JFrame();
+		s1 = new JSlider();
+		l1 = new JLabel();
+		
+		f1.setSize(800, 600);
+		f1.setLayout(null);
+		
+		l1 = new JLabel();
+		l1.setBounds(300, 100, 100, 50);
+		f1.add(l1);
+		
+		s1 = new JSlider(JSlider.HORIZONTAL, 0, 10000000, 25);
+		s1.setBounds(300, 200, 100, 50);
+		s1.addChangeListener(this);
+		f1.add(s1);
+		
+		f1.setVisible(true);
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	@Override
+	public void stateChanged(ChangeEvent e) {
+		l1.setText("" + s1.getValue());
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new Slider();
+	}
+
+}

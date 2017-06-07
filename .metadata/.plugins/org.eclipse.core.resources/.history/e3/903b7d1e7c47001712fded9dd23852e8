@@ -1,0 +1,65 @@
+package jas15;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.concurrent.TimeUnit;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class Stoper extends JFrame implements ActionListener{
+	JFrame f1;
+	JTextField t1;
+	JButton b1;
+	JLabel l1;
+	
+	Stoper(){
+		f1 = new JFrame();
+		f1.setSize(500, 500);
+		f1.setLayout(null);
+		
+		l1 = new JLabel("Input time");
+		l1.setBounds(30, 30, 200, 25);
+		f1.add(l1);
+		
+		t1 = new JTextField("");
+		t1.setBounds(30, 55, 100, 25);
+		f1.add(t1);
+		
+		b1 = new JButton("Start");
+		b1.setBounds(30, 80, 80, 35);
+		b1.addActionListener(this);
+		f1.add(b1);
+		
+		f1.setVisible(true);
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		try{
+			int time = Integer.parseInt(t1.getText());
+			for (int num = time; num >=0; num--){
+				l1.setText(Integer.toString(num));
+				try 
+	            {
+	                this.wait(1000);
+	            } 
+	            catch (InterruptedException e1) 
+	            {
+	            }
+			}
+			
+		}
+		catch (NumberFormatException n){
+			l1.setText("You can only input integer values");
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new Stoper();
+	}
+}

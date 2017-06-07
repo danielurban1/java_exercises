@@ -1,0 +1,36 @@
+package jas12;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+import javax.swing.JTable;
+
+public class Table extends JFrame implements ActionListener{
+	String employee[][] = {{"12345", "Jan", "Kowalski", "4000"}, {"12345", "Anna", "Nowak", "4000"}};
+	String column[] = {"PESEL", "Name", "Surename", "Income"};
+	JTable jt;
+	
+	Table(){
+		setSize(500, 500);
+		setLayout(null);
+		
+		jt = new JTable(employee, column);
+		jt.setBounds(30, 80, 200, 10);
+		this.add(jt);
+		
+		setVisible(true);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new Table();
+	}
+
+}

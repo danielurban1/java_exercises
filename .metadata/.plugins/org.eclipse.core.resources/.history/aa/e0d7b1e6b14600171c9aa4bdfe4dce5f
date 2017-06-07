@@ -1,0 +1,77 @@
+package jas3;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+
+public class Change extends JFrame implements ActionListener{
+	JButton  b1;
+	JButton  b2;
+	JLabel l1;
+	JLabel l2;
+	
+	Change(){
+		setSize(300, 200);
+		setLayout(null);
+		setVisible(true);
+		
+		l1 = new JLabel("Hello word");
+		l1.setBounds(50, 60, 60, 60);
+		this.add(l1);
+		
+		l2 = new JLabel("Text2");
+		l2.setBounds(50, 100, 60, 60);
+		this.add(l2);
+		
+		b1 = new JButton("OK");
+		b1.setBounds(110, 60, 60, 40);
+		b1.addActionListener(this);
+		this.add(b1);
+		
+		b2 = new JButton("OK");
+		b2.setBounds(110, 110, 60, 40);
+		b2.addActionListener(this);
+		this.add(b2);
+	}
+	public void actionPerformed(ActionEvent e){
+		if(l1.getText().equals("Hello word") && e.getSource().equals(b1)){
+			l1.setText("2");
+		}
+		else{
+			l1.setText("Hello word");
+		}
+		if(l2.getText().equals("Text2") && e.getSource().equals(b2)){
+			l2.setText("Text1");
+		}
+		else{
+			l2.setText("Text2");
+		}
+		if(e.getSource().equals(b1)){
+			if(b1.getText().equals("OK")){
+				b1.setText("b");
+			}
+			else{
+				b1.setText("OK");
+			}
+		}
+		else if(e.getSource().equals(b2)){
+			if(b2.getText().equals("OK")){
+				b2.setText("b");
+			}
+			else{
+				b2.setText("OK");
+			}
+			}
+	}
+		
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new Change();
+	}
+}

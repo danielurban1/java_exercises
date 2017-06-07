@@ -1,0 +1,14 @@
+package jas1;
+
+import javax.swing.JFrame;
+
+import SwingAWT.Appka;
+
+public class Jas1 extends JFrame{
+	Jas1(){
+		
+	}
+	public static void main(String[] args) {
+		new Jas1();
+	}
+}

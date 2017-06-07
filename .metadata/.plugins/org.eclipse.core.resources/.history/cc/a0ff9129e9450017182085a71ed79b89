@@ -1,0 +1,18 @@
+package j80;
+
+import java.util.Random;
+
+public class ThrowsExceprtion {
+	public static void exeption(){
+		Random rd = new Random(); 
+		int rand = rd.nextInt(2);
+		try{
+			if (rand == 1){
+				throw new Exc();
+			}
+		}
+		catch (Exc ex){
+				System.out.println("exc");
+		}
+	}
+}

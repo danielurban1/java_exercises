@@ -1,0 +1,55 @@
+package jas13;
+
+import java.awt.List;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JList;
+import javax.swing.JTable;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
+
+public class ListSetection extends JFrame implements ActionListener, ListSelectionListener{
+	String l1[] = {"ABC", "DEF"};
+	String l2[] = {"Name"};
+	JFrame f1;
+	JList jt;
+	JLabel lab1;
+	
+	ListSetection(){
+		
+		f1 = new JFrame();
+		f1.setSize(500, 500);
+		f1.setLayout(null);
+				
+		jt = new JList(l1);
+		jt.setBounds(30, 40, 300, 300);
+		jt.addListSelectionListener(this);
+		f1.add(jt);
+		
+		lab1 = new JLabel("asaa");
+		lab1.setBounds(100, 450, 50, 50);
+		f1.add(lab1);
+		
+		f1.setVisible(true);
+	}
+
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void valueChanged(ListSelectionEvent a) {
+		// TODO Auto-generated method stub
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new ListSetection();
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;jdbc2.DB.club&apos; in &apos;jdbc2.DB&apos;&#x0D;&#x0A;- Original project: &apos;JDBC2&apos;&#x0D;&#x0A;- Original element: &apos;jdbc2.DB.club&apos;&#x0D;&#x0A;- Getter method name: &apos;getClub&apos;&#x0D;&#x0A;- Setter method name: &apos;setClub&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;club&apos;" flags="589830" getter="getClub" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;jdbc2{DB.java[DB^club" insertion="6" setter="setClub" stamp="1496237863943" version="1.0" visibility="1"/>
+</session>

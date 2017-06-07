@@ -1,0 +1,13 @@
+package j80;
+
+public class Exc extends Exception{
+
+	      // Parameterless Constructor
+	      public Exc() {}
+
+	      // Constructor that accepts a message
+	      public  Exc()
+	      {
+	         super("sasa");
+	      }
+	 }

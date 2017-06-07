@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form>
+		<input name="para1">Name</br>
+		<input name="para2">Surename</br>
+		<input name="para2">Surename</br>
+	</form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+package jas13;
+
+import java.awt.List;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
+
+import javax.swing.JFrame;
+import javax.swing.JTable;
+
+public class ListSetection extends JFrame implements ActionListener{
+	ArrayList<String> l1;
+	JFrame f1;
+	JTable jt;
+	
+	ListSetection(){
+		l1.add("ABC");
+		l1.add("DEF");
+		f1.setSize(500, 500);
+		f1.setLayout(null);
+		
+		jt = new JTable();
+		jt.setBounds(30, 40, 300, 300);
+		f1.add(jt);
+		f1.setVisible(true);
+	}
+
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new ListSetection();
+	}
+}

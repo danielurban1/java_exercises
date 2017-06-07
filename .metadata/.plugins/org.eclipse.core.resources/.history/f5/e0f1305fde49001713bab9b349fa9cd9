@@ -1,0 +1,10 @@
+package application.controller;
+
+public class AppController extends Initializable{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

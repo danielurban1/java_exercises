@@ -1,0 +1,30 @@
+package application.controller;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.fxml.FXML;
+import javafx.scene.control.ChoiceBox;
+import javafx.scene.layout.AnchorPane;
+import javafx.fxml.Initializable;
+
+public class AppController implements Initializable{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+    @FXML
+    private AnchorPane field;
+
+    @FXML
+    private ChoiceBox<?> box;
+
+}

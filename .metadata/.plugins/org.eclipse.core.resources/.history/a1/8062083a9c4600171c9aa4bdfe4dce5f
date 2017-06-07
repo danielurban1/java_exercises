@@ -1,0 +1,9 @@
+package jas1;
+
+import javax.swing.JFrame;
+
+public class Jas1 extends JFrame{
+	Jas1(){
+		
+	}
+}

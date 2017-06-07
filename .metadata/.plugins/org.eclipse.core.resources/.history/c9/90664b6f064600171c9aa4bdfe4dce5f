@@ -1,0 +1,79 @@
+package jdbc2;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class DB {
+	private String name;
+	private int category;
+	private int club;
+	
+	DB(String name, int category){
+		setName(name);
+		setCategory(category);
+	}
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getCategory() {
+		return category;
+	}
+
+	public void setCategory(int category) {
+		this.category = category;
+	}
+
+	public void show(){
+		try{
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/zawody_bjj","root","123Fokus456p");
+			Statement stmt = con.createStatement();
+			ResultSet rs =stmt.executeQuery("select*from dane_os");
+			while(rs.next()){
+				System.out.printf("%-10s",rs.getInt(1));
+				System.out.printf("%-30s", rs.getString(2));
+				System.out.printf("%-40s", rs.getString(3));
+				System.out.println();
+			}
+			con.close();
+			} 
+		catch(Exception e){
+			System.out.println(e);
+			}
+	}
+	
+	public void insert(){
+		try{
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/zawody_bjj","root","123Fokus456p");
+			Statement stmt = con.createStatement();
+			ResultSet rs =stmt.executeQuery("insert into dane_os ()");
+			while(rs.next()){
+				System.out.printf("%-10s",rs.getInt(1));
+				System.out.printf("%-30s", rs.getString(2));
+				System.out.printf("%-40s", rs.getString(3));
+				System.out.println();
+			}
+			con.close();
+			} 
+		catch(Exception e){
+			System.out.println(e);
+			}
+	}
+
+	public int getClub() {
+		return club;
+	}
+
+	public void setClub(int club) {
+		this.club = club;
+	}
+}

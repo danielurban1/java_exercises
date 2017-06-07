@@ -1,0 +1,33 @@
+package j80;
+
+import java.util.Random;
+
+public class ThrowsExceprtion {
+	
+	static void shuffle() throws Exc, Exc2, Exc3 {
+		Random rd = new Random(); 
+		switch (rd.nextInt(3)){
+		case 0:
+			throw new Exc();
+		case 1:
+			throw new Exc2();
+		case 2:
+			throw new Exc3();
+		}
+	} 
+	
+	public static void main(){
+		try{
+			shuffle();
+		}
+		catch (Exc ex){
+				System.out.println("exc");
+		} catch (Exc2 e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (Exc3 e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

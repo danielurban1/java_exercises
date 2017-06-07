@@ -1,0 +1,48 @@
+package j77;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class CompanyApp {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		Scanner sc = new Scanner(System.in);
+		Company c = new Company();
+		
+		File file = new File("C:/Users/Daniel/Desktop/employees.txt");
+		Scanner in = new Scanner(file);
+		
+		while (in.hasNextLine()){
+		String emp = in.nextLine();
+		Employee e1 = new Employee();
+		c.setEmployeeList(e1.getEmployeeString(emp));
+		}
+		System.out.println(c.getEmployeeList());
+		while (true){
+			System.out.print("Input name: ");
+			String name = sc.nextLine();
+			
+			System.out.print("Input surename: ");
+			String surename = sc.nextLine();
+			
+			System.out.print("Input payment: ");
+			int age = sc.nextInt();
+			
+			Employee e = new Employee(name, surename, age);
+			c.setEmployeeList(e.getEmployee());
+			
+			System.out.print("Continue? (Y)es ");
+			String con = sc.nextLine();
+			if (con.equals("Y")){
+				continue;
+			}
+			else{
+				break;
+			}
+		}
+		
+		System.out.println(c.getEmployeeList());
+	}
+
+}

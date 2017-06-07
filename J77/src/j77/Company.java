@@ -1,0 +1,21 @@
+package j77;
+
+import java.util.ArrayList;
+
+public class Company {
+	private ArrayList<String> employeeList;
+	
+	Company(){
+		employeeList  = new ArrayList<String>();
+	}
+
+
+	public ArrayList<String> getEmployeeList() {
+		return employeeList;
+	}
+
+	public void setEmployeeList(String element) {
+		this.employeeList.add(element);
+	}
+	
+}

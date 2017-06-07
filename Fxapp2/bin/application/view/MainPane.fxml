@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Box?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="field" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.AppController">
+   <children>
+      <ChoiceBox fx:id="box" layoutX="160.0" layoutY="157.0" prefWidth="150.0" />
+      <Box />
+      <Button fx:id="b1" layoutX="170.0" layoutY="227.0" mnemonicParsing="false" onAction="#upperCase" text="Button" />
+      <Text fx:id="t1" layoutX="121.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="275.6708984375" />
+      <TextField fx:id="t2" layoutX="135.0" layoutY="72.0" onKeyReleased="#dispay1" />
+      <TextField fx:id="t3" layoutX="337.0" layoutY="72.0" onKeyReleased="#dispay2" />
+   </children>
+</AnchorPane>

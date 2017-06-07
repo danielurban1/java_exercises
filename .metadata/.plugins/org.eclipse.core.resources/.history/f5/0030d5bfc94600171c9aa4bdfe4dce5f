@@ -1,0 +1,35 @@
+package jas7;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JCheckBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class CheckBox extends JFrame implements ActionListener{
+	JCheckBox cb1;
+	JLabel l1;
+	
+	CheckBox(){
+		setSize(500, 500);
+		setLayout(null);
+		
+		cb1 = new JCheckBox("Check me", false);
+		cb1.setBounds(30, 100, 150, 50);
+		this.add(cb1);
+		
+		setVisible(true);
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new CheckBox();
+	}
+
+}

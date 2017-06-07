@@ -1,0 +1,22 @@
+2017-04-21 19:46:26,275 [Worker-3] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2017-04-21 19:55:03,315 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-05-23 09:12:42,324 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-05-25 09:14:03,665 [Worker-72] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-05-26 09:33:44,333 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-05-31 14:17:36,795 [Worker-6] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-06-01 15:50:45,813 [Worker-4] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-06-02 09:40:49,814 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-06-05 09:23:43,424 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-06-05 09:27:24,066 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-06-05 09:50:10,926 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-06-05 09:50:43,758 [Worker-13] INFO  o.e.xtext.builder.impl.XtextBuilder - Build Fx in 14 ms
+2017-06-05 09:50:50,454 [Worker-6] INFO  o.e.xtext.builder.impl.XtextBuilder - Build Fx in 5 ms
+2017-06-05 09:51:47,011 [Worker-11] INFO  o.e.xtext.builder.impl.XtextBuilder - Build Fx in 873 ms
+2017-06-05 09:52:24,734 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-06-05 09:52:26,799 [Worker-0] INFO  o.e.xtext.builder.impl.XtextBuilder - Build Fx in 42 ms
+2017-06-05 09:57:16,761 [Worker-1] INFO  o.e.xtext.builder.impl.XtextBuilder - Build FirstFx in 4 ms
+2017-06-05 09:57:17,901 [Worker-15] INFO  o.e.xtext.builder.impl.XtextBuilder - Build FirstFx in 7 ms
+2017-06-05 09:57:39,075 [Worker-17] INFO  o.e.xtext.builder.impl.XtextBuilder - Build FirstFx in 0 ms
+2017-06-05 09:58:22,983 [Worker-16] INFO  o.e.xtext.builder.impl.XtextBuilder - Build FirstFx in 2 ms
+2017-06-05 09:58:37,999 [Worker-1] INFO  o.e.xtext.builder.impl.XtextBuilder - Build FirstFx in 1 ms
+2017-06-05 09:58:52,678 [Worker-15] INFO  o.e.xtext.builder.impl.XtextBuilder - Build FirstFx in 1 ms

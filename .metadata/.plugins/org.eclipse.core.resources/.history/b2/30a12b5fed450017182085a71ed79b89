@@ -1,0 +1,27 @@
+package j81;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class C1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int number = 0;
+		boolean check = true;
+		while (check){
+			System.out.print("Input integer:");
+			try{
+				number = sc.nextInt();
+				check = false;
+				}
+			catch (InputMismatchException a){
+				System.out.println("You can only input integer.");
+			}
+			
+		}
+		System.out.println("Your integer = " + number);
+	}
+
+}

@@ -1,0 +1,42 @@
+package application.controller;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Text;
+import javafx.fxml.Initializable;
+
+public class AppController implements Initializable{
+
+
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {
+		b1.setText("dsds");
+		
+	}
+
+
+    @FXML
+    private AnchorPane field;
+
+    @FXML
+    private ChoiceBox<?> box;
+    
+    @FXML
+    private Button b1;
+    @FXML
+    void upperCase(ActionEvent event) {
+    	b1.setText(t2.getText().toUpperCase());
+    }
+    @FXML
+    private Text t1;
+
+    @FXML
+    private TextField t2;
+}
